@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity1">
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/viewflipper"
+           />
+<!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/header"
+                android:gravity="bottom"
+                android:text="Sistem Informasi Statistik Barru"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5px">
+
+        </LinearLayout>
+-->
+
+            <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="3"
+                   >
+                   <!--First Row-->
+
+                    <LinearLayout
+                        android:id="@+id/data"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorGrapeFruit"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_data"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorGrapeFruitDark"
+                            android:text="Data"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/publikasi"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorBitterSweet"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_publikasi"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorBitterSweetDark"
+                            android:text="Publikasi"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/infografis"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorFlower"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_infografis"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorFlowerDark"
+                            android:text="Infografis"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+
+  </LinearLayout>
+
+                  <!-- Second Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorGrass"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_grafik"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorGrassDark"
+                            android:text="Grafik"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorBlueJeans"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_kondef"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorBlueJeansDark"
+                            android:text="Kondef"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical"
+                        android:background="@color/colorLavander"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_icon_konsul"
+                            android:tint="@color/colorWhite"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorLavanderDark"
+                            android:text="Konsultasi"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            <!-- End Second Row-->
+            <!-- Third Row
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorMint"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_icon_tenis"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorMintDark"
+                        android:text="Tennis"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorAqua"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_icon_volleyball"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorAquaDark"
+                        android:text="Volleyball"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorPinkRose"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_icon_weight_lefting"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorPinkRoseDark"
+                        android:text="Weight Lifting"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+           End Third Row-->
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>
